@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    overflow-x: hidden;
+    font-family: Maven Pro;
+  }
+  section {
+    width: 100vw;
+    max-width: 500px;
+    height: 100vh;
+    max-height: 700px;
+    background-color: #444;
+    text-align: center;
+    font-size: 20px;
+    padding: 25px;
+    color: #eee;
+  }
+  .glitch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    width: 100vw;
+    max-width: 500px;
+    height: 100vh;
+    max-height: 700px;
+  }
+  .glitch:not(.f0f) {
+    animation: glitchfader 2s infinite;
+  }
+  .glitch.f0f {
+    opacity: 0.3;
+    max-height: 689px;
+  }
+  .fa-exclamation-triangle {
+    font-size: 80px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .main {
+    font-size: 60px;
+    margin-bottom: 5px;
+  }
+  hr {
+    margin: 20px;
+    border: none;
+    height: 1px;
+    background-color: #bbb;
+  }
+  .code {
+    font-size: 25px;
+  }
+  .learn {
+    text-decoration: none;
+    background-color: #eee;
+    color: #444;
+    display: inline-block;
+    width: 90%;
+    max-width: 150px;
+    height: 50px;
+    line-height: 45px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: transparent 1px solid;
+    font-size: 1em;
+    transition: border-color 0s 0.05s, color 0.05s 0.1s;
+  }
+  .learn:hover {
+    font-size: 1.1em;
+    color: #eee;
+    background-color: transparent;
+    border-color: #eee;
+  }
+  a {
+    color: #eee;
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: transparent 1px solid;
+    transition: border-color 0.05s;
+  }
+  a:hover {
+    border-color: #ccc;
+  }
+  .countdown {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 85%;
+  }
+  @media screen and (max-width: 400px) {
+    section {
+      min-height: 100vh;
+    }
+  }
+  @-moz-keyframes glitchfader {
+    50% {
+      opacity: 0.2;
+    }
+  }
+  @-webkit-keyframes glitchfader {
+    50% {
+      opacity: 0.2;
+    }
+  }
+  @-o-keyframes glitchfader {
+    50% {
+      opacity: 0.2;
+    }
+  }
+  @keyframes glitchfader {
+    50% {
+      opacity: 0.2;
+    }
+  }

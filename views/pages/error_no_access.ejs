@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Taken from https://codepen.io/Ovoce/pen/ZYpVvR because im lazy and was too focused on the backend -->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Not Authorised!</title>
+  <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./css/error_style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<div class="glitch"></div>
+<div class="glitch f0f"></div>
+
+<section>
+  <i class="fa fa-exclamation-triangle"></i>
+  <div>
+    I'm afraid that you're not permitted to use this site.
+    <div class="main">Access Denied</div>
+    Ensure you are allowed access to this site.
+  </div>
+  <hr />
+  <div class="code">Your Group: <b><%= group %></b></div>
+  <a href="#" class="learn">Learn more</a>
+  <div class="countdown">Your browser will log you out in <span class="count">60</span> seconds. You can also: </div>
+  <a href="#" onclick="window.location.href = './logout';  "><i class="fa fa-reply"></i> Logout now</a><br />
+  <a href="#"><i class="fa fa-home"></i> Return to safety (Forum Site)</a>
+</section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://hyperglitch.com/theme/js/glitch.jquery.js'></script><script  src="./js/error.js"></script>
+
+</body>
+</html>

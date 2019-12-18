@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Taken from https://codepen.io/knekk/pen/xXraeE because im lazy and was focused on backend -->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<div class="tile">
+  <div class="tile-header">
+    <h2 style="color: white; opacity: .75; font-size: 4rem; display: flex; justify-content: center; align-items: center; height: 100%;">SIGN IN</h2>
+  </div>
+  
+  <div class="tile-body">
+    <form id="form" action="./login/auth">
+      <label class="form-input">
+        <span class="label">This Site is for internal use to pre-registered community members. It is accessible via a registered Forum Software Account. Your raw password is not stored anywhere or sent across the internet.</span>
+        <span class="underline"></span>
+      </label>
+      
+      <div class="submit-container clearfix" style="margin-top: 2rem;">          
+        <div id="submit" role="button" type="button" class="btn btn-irenic float-right" tabindex="0" onclick='window.location.href = "./login/auth";'>
+          <span>SIGN IN</span>
+        </div>
+          
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

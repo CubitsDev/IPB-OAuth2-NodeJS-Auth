@@ -1,0 +1,6 @@
+{
+    "allowedGroups": {
+        "name": ["Admin", "Moderator"],
+        "gid": [4, 3]
+    }
+}
