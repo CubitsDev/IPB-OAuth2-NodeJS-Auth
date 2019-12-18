@@ -9,10 +9,13 @@
 
  ## Prerequisites
 
- Invision Power Board 4.3+ running on a web server, acting as the OAuth Server
+ Invision Power Board 4.3+ running on a web server, acting as the OAuth Server.
+
  NodeJS 12.14+
+
  NPM to install all the requirements.
- Some Knowledge of the OAuth2 Flow
+
+ Some Knowledge of the OAuth2 Flow.
 
  ## Setup
 
